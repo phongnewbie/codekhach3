@@ -1,0 +1,1059 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.header-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  margin-right: 30%;
+  background: white;
+  color: #2a5298;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.booking-btn {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #102f85;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hotline {
+  font-size: 12px;
+}
+
+/* Navigation */
+.nav {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-item {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-item:hover {
+  background: #f0f0f0;
+}
+
+/* Banner */
+.banner {
+  height: 500px;
+  background: url("av7.png") center/cover;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.tci-logo {
+  background: white;
+  color: #2a5298;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.banner-text h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.1;
+}
+
+.banner-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+.banner-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.discount-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.discount {
+  background: #ff4444;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 48px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(255, 68, 68, 0.3);
+}
+
+.discount-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-info {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.banner-image {
+  flex: 1;
+  text-align: right;
+  position: relative;
+}
+
+.doctor-placeholder {
+  width: 350px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Introduction Section */
+.intro-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.intro-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.intro-title {
+  color: #2a5298;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  background: #f8f9ff;
+  border: 2px solid #e0e6ff;
+  border-radius: 15px;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+  height: 150px;
+  color: white;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 0;
+}
+
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(30, 60, 114, 0.15);
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 24px rgba(30, 60, 114, 0.1);
+  padding: 32px 18px 18px 18px;
+  width: 200px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-item i {
+  background: #f4f7fe;
+  color: #2d52c0;
+  border-radius: 50%;
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(30, 60, 114, 0.08);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2a5298, #4a7bc8);
+  border-radius: 15px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(42, 82, 152, 0.3);
+}
+
+.service-text {
+  color: #2d52c0;
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-top: 8px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Doctor Section */
+.doctor-section {
+  margin-top: 10%;
+  background: white;
+  padding: 60px 0;
+}
+
+.doctor-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.doctor-title {
+  color: #2a5298;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.doctor-subtitle {
+  color: #2a5298;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.doctor-description {
+  font-size: 16px;
+  color: #666;
+  border-bottom: 2px solid #2a5298;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .service-item {
+    width: 280px;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-text h2 {
+    font-size: 24px;
+  }
+
+  .services-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    width: 250px;
+  }
+
+  .services-grid {
+    gap: 10px;
+  }
+}
+.doctor-imageSection {
+  display: flex;
+}
+.doctor-imageSection img {
+  width: 33%;
+  margin-left: 20px;
+  margin-top: 20px;
+  object-fit: cover; /* Đảm bảo ảnh vừa khung mà không bị méo */
+  border: 3px solid #007bff; /* Viền xanh dương: 3px độ dày, màu #007bff (xanh tươi) */
+  border-radius: 15px; /* Bo tròn góc: 15px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho ảnh */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển động mượt mà khi hover */
+}
+/* PHẦN CHUNG CHO TIÊU ĐỀ VÀ KHUNG */
+.equipment-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.section-title {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* CONTAINER CHÍNH CỦA GRID LAYOUT */
+.equipment-grid-container {
+  display: grid;
+  /* Định nghĩa 4 cột với chiều rộng bằng nhau (1fr) */
+  grid-template-columns: repeat(4, 1fr);
+  /* Định nghĩa các vùng cho từng ảnh để dễ quản lý */
+  grid-template-areas:
+    "item1 item1 item2 item2" /* Hàng 1: item1 chiếm 2 cột, item2 chiếm 2 cột */
+    "item3 item4 item4 item5"; /* Hàng 2: item3 chiếm 1, item4 chiếm 2, item5 chiếm 1 */
+  gap: 20px; /* Khoảng cách giữa các ô */
+  max-width: 1200px; /* Chiều rộng tối đa của container */
+  margin: 0 auto; /* Căn giữa container */
+  align-items: center; /* Căn giữa các item theo chiều dọc */
+}
+
+/* KIỂU CHUNG CHO TẤT CẢ CÁC ẢNH TRONG GRID */
+.equipment-grid-container img {
+  width: 100%; /* Ảnh sẽ lấp đầy chiều rộng của ô grid nó nằm trong */
+  height: 394px; /* Chiều cao tự động để giữ tỷ lệ khung hình */
+  object-fit: cover; /* Đảm bảo ảnh vừa khung mà không bị méo */
+  border: 3px solid #007bff; /* Viền xanh dương */
+  border-radius: 15px; /* Bo tròn góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover mượt mà */
+}
+
+.equipment-grid-container img:hover {
+  transform: translateY(-5px); /* Nâng ảnh lên một chút khi hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng đậm hơn khi hover */
+}
+
+/* ĐỊNH VỊ VÀ KÍCH THƯỚC CỤ THỂ CHO TỪNG ẢNH BẰNG grid-area */
+.equipment-item-1 {
+  grid-area: item1;
+  height: 300px; /* Chiều cao cố định cho ảnh lớn */
+}
+
+.equipment-item-2 {
+  grid-area: item2;
+  height: 300px; /* Chiều cao cố định cho ảnh lớn */
+}
+
+.equipment-item-3 {
+  grid-area: item3;
+  height: 200px; /* Chiều cao cố định cho ảnh nhỏ */
+}
+
+.equipment-item-4 {
+  grid-area: item4;
+  height: 200px; /* Chiều cao cố định cho ảnh nhỏ */
+}
+
+.equipment-item-5 {
+  grid-area: item5;
+  height: 200px; /* Chiều cao cố định cho ảnh nhỏ */
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Trên màn hình vừa (ví dụ: tablet) */
+@media (max-width: 992px) {
+  .equipment-grid-container {
+    /* Chuyển sang bố cục 2 cột cho hàng trên, và 2 cột + 1 cột cho hàng dưới */
+    grid-template-columns: repeat(2, 1fr); /* 2 cột có chiều rộng bằng nhau */
+    grid-template-areas:
+      "item1 item1"
+      "item2 item2"
+      "item3 item4"
+      "item5 ."; /* item5 chiếm 1 cột, chấm ('.') là ô trống */
+  }
+
+  .equipment-item-1,
+  .equipment-item-2 {
+    height: 250px; /* Giảm chiều cao ảnh lớn */
+  }
+
+  .equipment-item-3,
+  .equipment-item-4,
+  .equipment-item-5 {
+    height: 180px; /* Giảm chiều cao ảnh nhỏ */
+  }
+}
+
+/* Trên màn hình nhỏ (ví dụ: điện thoại) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5em;
+  }
+  .equipment-grid-container {
+    /* Tất cả các ảnh hiển thị thành một cột duy nhất */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+  }
+  .equipment-grid-container img {
+    height: 200px; /* Chiều cao đồng nhất cho tất cả ảnh trên di động */
+  }
+}
+
+/* Trên màn hình rất nhỏ */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.2em;
+  }
+  .equipment-grid-container img {
+    height: 150px; /* Chiều cao nhỏ hơn cho màn hình rất nhỏ */
+  }
+}
+
+/* PHẦN DỊCH VỤ ĐA DẠNG */
+.services-diverse-section {
+  padding: 40px 20px;
+
+  text-align: center;
+  margin-top: 40px;
+  position: relative; /* Quan trọng để tiêu đề chân trang có thể định vị */
+}
+
+.services-main-title {
+  color: #004d99; /* Màu xanh đậm cho tiêu đề chính */
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* NÚT CHỌN DANH MỤC */
+.service-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Cho phép các nút xuống hàng nếu không đủ chỗ */
+  gap: 12px; /* Tăng khoảng cách giữa các nút một chút */
+  margin-bottom: 40px;
+  padding: 0 10px; /* Thêm padding ngang để nút không bị dính vào mép màn hình nhỏ */
+}
+
+.category-button {
+  background-color: #ffffff; /* Nền trắng */
+  border: 2px solid #007bff; /* Viền xanh, độ dày 2px */
+  color: #007bff; /* Chữ xanh */
+  padding: 10px 20px; /* Tăng padding để nút to hơn */
+  border-radius: 25px; /* Bo tròn mạnh hơn */
+  cursor: pointer;
+  font-size: 0.95em; /* Kích thước chữ hơi lớn hơn */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease; /* Thêm transition cho box-shadow và border-color */
+  white-space: nowrap; /* Ngăn không cho chữ xuống dòng trong nút */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Bóng nhẹ ban đầu */
+}
+
+.category-button:hover {
+  background-color: #007bff; /* Nền xanh khi hover */
+  color: white; /* Chữ trắng khi hover */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Bóng xanh khi hover */
+  border-color: #007bff; /* Đảm bảo viền không đổi màu */
+}
+
+.category-button.active {
+  background-color: #007bff; /* Nền xanh khi active */
+  color: white; /* Chữ trắng khi active */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4); /* Bóng xanh đậm hơn khi active */
+  border-color: #007bff; /* Đảm bảo viền không đổi màu */
+}
+
+/* CONTAINER CỦA CÁC CARD DỊCH VỤ */
+.service-cards-container {
+  display: flex; /* Dùng Flexbox để xếp 4 card trên một hàng */
+  gap: 20px; /* Khoảng cách giữa các card */
+  justify-content: center;
+  align-items: flex-end; /* Căn chỉnh các card theo đáy (giúp card giữa cao hơn) */
+  max-width: 1200px;
+  margin: 0 auto 80px auto; /* Tăng margin-bottom để tạo khoảng cách với medical-wrapper */
+}
+
+/* STYLE CHUNG CHO MỖI CARD DỊCH VỤ */
+.service-card {
+  position: relative; /* Quan trọng cho overlay */
+  border: 3px solid #007bff; /* Viền xanh */
+  border-radius: 15px; /* Bo tròn góc card */
+  overflow: hidden; /* Quan trọng để ảnh và overlay không tràn ra ngoài bo tròn */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn */
+  flex: 1; /* Cho phép card mở rộng để lấp đầy không gian */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Căn chỉnh nội dung (overlay) xuống dưới */
+  min-width: 220px; /* Giới hạn chiều rộng tối thiểu của mỗi card */
+  max-width: 280px; /* Giới hạn chiều rộng tối đa của mỗi card */
+  height: 400px; /* Chiều cao cố định cho tất cả các card để ảnh đều nhau */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-image {
+  width: 100%;
+  height: 100%; /* Lấp đầy chiều cao của card */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  position: absolute; /* Đặt ảnh làm nền */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Đảm bảo ảnh nằm dưới overlay */
+}
+
+.service-card-overlay {
+  position: relative; /* Đặt trên ảnh */
+  z-index: 2; /* Đảm bảo overlay nằm trên ảnh */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 50%
+  ); /* Gradient đen mờ từ dưới lên */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Căn chỉnh text ở giữa theo chiều dọc */
+  justify-content: center;
+  height: 100%; /* Lấp đầy toàn bộ chiều cao của card */
+}
+
+.service-card-text {
+  font-size: 1.1em;
+  height: 85px;
+  font-weight: bold;
+  margin: 0;
+  white-space: normal; /* Cho phép chữ xuống dòng */
+  word-break: break-word; /* Ngắt từ nếu cần */
+  background: #0b2775ad; /* Background màu xanh với độ trong suốt */
+  padding: 15px 20px; /* Thêm padding cho text */
+  border-radius: 8px; /* Bo tròn góc cho background */
+  backdrop-filter: blur(5px); /* Hiệu ứng blur nhẹ */
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* MEDICAL SECTIONS */
+.medical-wrapper {
+  max-width: max-content;
+  margin: 40px auto 0 auto; /* Thêm margin-top để tạo khoảng cách với section trước */
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-block {
+  margin-bottom: 0;
+  background: white;
+}
+
+.service-header {
+  text-align: center;
+  padding: 25px 20px 15px 20px;
+  background: white;
+}
+
+.service-main-title {
+  color: #2c5aa0;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.service-description {
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.service-media-area {
+  background: #d4d4d4;
+  height: 240px;
+  margin: 15px 20px 25px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-media-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  animation: media-shimmer 2s infinite;
+}
+
+@keyframes media-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.content-placeholder {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.service-block:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.service-block {
+  transition: all 0.3s ease;
+}
+
+.service-block:hover {
+  transform: translateY(-2px);
+}
+
+.service-block:hover .service-media-area {
+  background: #c8c8c8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  /* Buttons responsive */
+  .button-row {
+    gap: 6px;
+    margin-bottom: 30px;
+  }
+
+  .modern-button {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+
+  /* Sections responsive */
+  .medical-wrapper {
+    margin: 10px;
+    border-radius: 12px;
+  }
+
+  .service-header {
+    padding: 20px 15px 12px 15px;
+  }
+
+  .service-main-title {
+    font-size: 16px;
+  }
+
+  .service-description {
+    font-size: 12px;
+  }
+
+  .service-media-area {
+    height: 200px;
+    margin: 12px 15px 20px 15px;
+    border-radius: 12px;
+  }
+}
+
+/* Main container */
+.main-container {
+  min-height: 100vh;
+
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+/* Content area */
+.content-wrapper {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+<!-- .logos {
+  background: #2196f3;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+-->
+
+  /* Main article */
+  .main-article {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-article-image {
+  width: 100%;
+  height: 300px;
+
+  background-image: url("data:image/jpeg;base64,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");
+  background-size: cover;
+  position: relative;
+}
+
+.main-article-content {
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196f3;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.main-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.main-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-item {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.sidebar-item:hover {
+  transform: translateY(-2px);
+}
+
+.sidebar-image img {
+  width: 120px;
+  height: 130px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #2196f3;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  position: relative;
+}
+
+.sidebar-content {
+  flex: 1;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #2196f3;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.sidebar-desc {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.sidebar-link {
+  font-size: 11px;
+  color: #666;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sidebar-link:hover {
+  color: #2196f3;
+}
+
+/* Image dimensions indicator */
+.image-dimensions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #2196f3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer {
+  background: linear-gradient(to right, #003caa, #0058d4);
+  color: white;
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left iframe {
+  border-radius: 12px;
+}
+
+.footer-info {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-right {
+  display: flex;
+
+  gap: 10px;
+}
+
+.footer-hotline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: #003caa;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.hotline-label {
+  font-size: 12px;
+}
+
+.hotline-number {
+  font-size: 18px;
+}
+
+.footer-button {
+  background: white;
+  color: #003caa;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.footer-button small {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.icon-calendar::before {
+  content: "📅";
+}
+
+.icon-hospital::before {
+  content: "🏥";
+}
+
+.icon-phone::before {
+  content: "📞";
+}
