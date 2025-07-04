@@ -1,0 +1,551 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.hero-section {
+  background-image: url("https://phongkham2.maugiaodien.com/wp-content/uploads/2021/04/banner_img2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.contact-info {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  color: #2c5aa0;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.office-section {
+  margin-bottom: 30px;
+}
+
+.office-section h3 {
+  color: #495057;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.office-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.office-section li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  color: #666;
+  line-height: 1.5;
+}
+
+.office-section li:before {
+  content: "📍";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact-form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2c5aa0;
+  box-shadow: 0 0 0 2px rgba(44, 90, 160, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #e91e63, #ad1457);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #ad1457, #880e4f);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+}
+
+.map-section {
+  margin-top: 40px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  position: relative;
+  height: 400px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder {
+  width: 100%;
+  text-align: center;
+  color: #6c757d;
+}
+
+.map-placeholder h3 {
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.office-marker {
+  position: absolute;
+  background: #2c5aa0;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.office-marker:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #2c5aa0;
+}
+
+.marker-1 {
+  top: 30%;
+  left: 40%;
+}
+
+.marker-2 {
+  top: 60%;
+  left: 30%;
+}
+
+.marker-3 {
+  top: 45%;
+  left: 60%;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.header-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  margin-right: 30%;
+  background: white;
+  color: #2a5298;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.booking-btn {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #102f85;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hotline {
+  font-size: 12px;
+}
+
+/* Navigation */
+.nav {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-item {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-item:hover {
+  background: #f0f0f0;
+}
+.main-footer {
+  background-color: #2d2d2d;
+  color: white;
+  margin-top: 60px;
+}
+
+.footer-top {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #e91e63, #ad1457);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #ad1457, #880e4f);
+}
+
+.footer-grid {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-column h3 {
+  color: #4caf50;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  color: #cccccc;
+  position: relative;
+  padding-left: 15px;
+}
+
+.info-list li:before {
+  content: "•";
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  margin-bottom: 12px;
+  color: #cccccc;
+  position: relative;
+  padding-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.service-list li:before {
+  content: "•";
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+}
+
+.service-list li:hover {
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.certification-logos {
+  width: 180px; /* hoặc chiều rộng phù hợp với ảnh của bạn */
+  height: 80px; /* hoặc chiều cao phù hợp */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  transition: opacity 0.5s;
+}
+.cert-logo.active {
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
+
+.cert-logo {
+  width: 160px;
+  height: 60px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cert-logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-buttons {
+  margin-left: 60% !important;
+  display: flex;
+
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-btn {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-btn:hover {
+  background: linear-gradient(135deg, #f57c00, #e65100);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-input {
+    border-radius: 25px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .search-btn {
+    border-radius: 25px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-btn {
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .certification-logos {
+    justify-content: center;
+  }
+}
