@@ -5,12 +5,14 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  body {
+    font-family: "Kanit", Arial, sans-serif;
+  }
 }
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: #264fc7;
   color: white;
   padding: 10px 0;
   position: relative;
@@ -501,11 +503,6 @@ body {
 @media screen and (min-width: 1280px) {
   /* Desktop lớn */
   /* Có thể thêm các rule riêng cho desktop lớn nếu cần */
-  body {
-    width: max-content;
-    padding: 0px !important;
-    margin: 0px !important;
-  }
 }
 
 .doctor-imageSection {
@@ -1009,7 +1006,7 @@ body {
 .footer {
   background: linear-gradient(to right, #003caa, #0058d4);
   color: white;
-  padding: 20px 30px;
+
   font-family: Arial, sans-serif;
 }
 
