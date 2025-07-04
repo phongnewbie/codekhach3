@@ -292,7 +292,6 @@ body {
 
 /* Doctor Section */
 .doctor-section {
-  margin-top: 10%;
   background: white;
   padding: 60px 0;
 }
@@ -353,6 +352,14 @@ body {
     width: fit-content;
     grid-template-columns: repeat(2, 2fr) !important;
     grid-template-columns: repeat(2, 2fr) !important;
+  }
+  .medical-wrapper img {
+    height: 220vh !important;
+    margin-left: 1vw !important;
+    margin-right: 1vw !important;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
   }
 }
 
@@ -437,6 +444,8 @@ body {
   /* Máy tính bảng */
   body {
     width: max-content;
+    padding: 0px !important;
+    margin: 0px !important;
   }
   .equipment-grid-container {
     grid-template-columns: repeat(2, 1fr);
@@ -482,11 +491,21 @@ body {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   /* Laptop nhỏ */
   /* Có thể thêm các rule riêng cho laptop nhỏ nếu cần */
+  body {
+    width: max-content;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   /* Desktop lớn */
   /* Có thể thêm các rule riêng cho desktop lớn nếu cần */
+  body {
+    width: max-content;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
 }
 
 .doctor-imageSection {
@@ -723,7 +742,6 @@ body {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .service-block {
@@ -756,9 +774,8 @@ body {
 }
 
 .service-media-area {
-  background: #d4d4d4;
-  height: 240px;
-  margin: 15px 20px 25px 20px;
+  background-image: url("av14.jpg");
+
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -769,20 +786,35 @@ body {
   overflow: hidden;
 }
 
-.service-media-area::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    transparent 30%,
-    rgba(255, 255, 255, 0.1) 50%,
-    transparent 70%
-  );
-  animation: media-shimmer 2s infinite;
+.service-media-area img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-media-area img:hover {
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+@media (max-width: 767px) {
+  .service-media-area {
+    height: 160px;
+    margin: 10px 5px 18px 5px;
+  }
+  .service-media-area img {
+    border-radius: 10px;
+  }
+  .medical-wrapper {
+    max-width: 100%;
+    margin: 40px auto 0 auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+  }
 }
 
 @keyframes media-shimmer {
@@ -799,10 +831,6 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   font-weight: 500;
-}
-
-.service-block:not(:last-child) {
-  border-bottom: 1px solid #f0f0f0;
 }
 
 .service-block {
@@ -829,9 +857,9 @@ body {
 /* Content area */
 .content-wrapper {
   display: flex;
-  padding: 20px;
+
   gap: 20px;
-  max-width: 1200px;
+
   margin: 0 auto;
 }
 
@@ -1062,4 +1090,16 @@ body {
 
 .icon-phone::before {
   content: "📞";
+}
+
+@media screen and (min-width: 770px) and (max-width: 1023px) {
+  .service-media-area img {
+    max-width: 380px;
+    max-height: 220px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
 }

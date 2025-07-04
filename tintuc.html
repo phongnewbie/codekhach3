@@ -1518,26 +1518,24 @@
       showPage(1);
     });
     document.addEventListener("DOMContentLoaded", function () {
-      const grid = document.getElementById("certificatesSlider");
-      const items = grid.querySelectorAll(".certificate-item");
-      const total = items.length;
-      const showCount = 4;
-      let start = 0;
-
-      function showSlide() {
-        // Ẩn tất cả
-        items.forEach((item) => (item.style.display = "none"));
-        // Hiện 4 ảnh liên tiếp
-        for (let i = 0; i < showCount; i++) {
-          let idx = (start + i) % total;
-          items[idx].style.display = "block";
+      const grid =
+        document.querySelectorAll(".certificates-grid")[1] ||
+        document.querySelector(".certificates-grid");
+      if (grid) {
+        const items = Array.from(grid.querySelectorAll(".certificate-item"));
+        const showCount = 4;
+        let start = 0;
+        function showSlide() {
+          items.forEach((item) => (item.style.display = "none"));
+          for (let i = 0; i < showCount; i++) {
+            let idx = (start + i) % items.length;
+            items[idx].style.display = "block";
+          }
+          start = (start + 1) % items.length;
         }
-        start = (start + 1) % total;
+        showSlide();
+        setInterval(showSlide, 1000);
       }
-
-      // Khởi tạo
-      showSlide();
-      setInterval(showSlide, 1000);
     });
   </script>
 </html>
